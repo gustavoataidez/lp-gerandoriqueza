@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&family=Lato&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+h3 {
+    font-family: 'Lato', sans-serif;
+    padding: 80px;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 120px;
+    width: 60vw;
+    max-width: 3000px;
+    line-height: 200px;
+    font-weight: 500;
+    color: white;
+}
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(../images/lp-estrelas.jpg);
+    width: 100vw;
+    height: 1400px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.back p {
+    display: none;
+}
+.conteudo {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video {
+    max-width: 2500px;
+    width: 70vw;
+    padding-bottom: 150px;
+}
+p {
+    text-align: center;
+    width: 60vw;
+    padding-top: 20rem;
+    font-size: 3rem;
+    color: gray;
+    font-weight: 300;
+}
+button {
+    padding: 2rem 6rem;
+    border-radius: 100px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    border: none;
+    background-color: limegreen;
+    font-size: 6rem;
+    box-shadow: 10px 10px 20px gray;
+}
+button:hover {
+    cursor: pointer;
+    background-color: forestgreen;
+}
+@media (max-width: 2100px) {
+    h3 {
+        padding: 40px;
+        font-size: 3rem;
+    }
+    h1 {
+        width: 80vw;
+        padding-bottom: 60px;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .back {
+        height: 800px;
+    }
+    button {
+        font-size: 4rem;
+    }
+    .video {
+        width: 80vw;
+        padding-bottom: 80px;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1300px) {
+    h3 {
+        padding: 30px;
+        font-size: 2rem;
+    }
+    h1 {
+        width: 80vw;
+        padding-bottom: 60px;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .back {
+        height: 700px;
+    }
+    button {
+        padding: 1rem 3rem;
+        font-size: 2.5rem;
+    }
+    .video {
+        width: 80vw;
+        padding-bottom: 60px;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 750px) {
+    h3 {
+        padding: 16px;
+        font-size: 1.2rem;
+    }
+    h1 {
+        width: 88vw;
+        padding-bottom: 30px;
+        line-height: 10px;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+    .back {
+        height: 450px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+    .video {
+        width: 95vw;
+        padding-bottom: 50px;
+    }
+    p {
+        padding-top: 5rem;
+        font-size: 12px;
+        width: 80vw;
+    }
+}
