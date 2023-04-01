@@ -1,0 +1,1 @@
+$('#botao').hide().delay(3000).fadeIn('slow')
