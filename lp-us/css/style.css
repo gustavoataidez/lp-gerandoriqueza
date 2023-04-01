@@ -9,7 +9,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(220, 220, 220);
 }
 h3 {
     font-family: 'Lato', sans-serif;
@@ -92,24 +92,26 @@ footer {
     font-weight: 400;
     width: 900px;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-bottom: 1rem;
 }
 button {
     margin-top: 80px;
     padding: 1rem 3rem;
-    border-radius: 100px;
+    border-radius: 5px;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 700;
     font-size: 26px;
     border: none;
-    background-color: #40b038;
+    background-color: #c8ab51;
     font-size: 30px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: 0px 10px 15px rgb(137, 137, 137);
 }
 button:hover {
     cursor: pointer;
-    background-color: forestgreen;
+    background-color: #a78b10;
+    transition: 0.3s;
+    transform: translate(0, -5px);
 }
 
 @media (max-width: 1300px) {
@@ -117,15 +119,15 @@ button:hover {
         width: 780px;
         position: absolute;
         left: 50%;
-        margin-left: -400px;
+        margin-left: -390px;
     }
     h3 {
         padding-top: 25px;
-        font-size: 20px;
+        font-size: 18px;
     }
     h1 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 26px;
+        line-height: 28px;
     }
     .back {
         height: 420px;
@@ -136,6 +138,7 @@ button:hover {
     }
     footer {
         font-size: 12px;
+        line-height: 14px;
         width: 800px;
         position: relative;
         margin-top: 5rem;
@@ -165,26 +168,27 @@ button:hover {
         height: 380px;
     }
     button {
-        padding: 10px 20px;
-        font-size: 1.5rem;
+        padding: 10px 25px;
+        font-size: 25px;
     }
     footer {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 12px;
         width: 90vw;
         padding-bottom: 1rem;
-        position: absolute;
-        top: 70vh;
+        position: relative;
     }
 }
 @media (max-width: 400px) {
     h3 {
         padding-top: 30px;
         padding-bottom: 16px;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     h1 {
         font-size: 6vw;
         line-height: 6vw;
+        padding-bottom: 20PX;
     }
     button {
         padding: 10px 20px;
