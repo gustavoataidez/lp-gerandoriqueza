@@ -20,6 +20,9 @@ h3 {
     color: white;
     text-align: center;
 }
+#texto2 {
+    text-align: center;
+}
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -27,11 +30,11 @@ h1 {
     letter-spacing: 1px;
     padding-bottom: 32px;;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
 }
 span {
-    font-weight: 600;
+    font-weight: 700;
 }
 .back {
     margin: 0 auto;
@@ -50,10 +53,10 @@ span {
     display: none;
 }
 .conteudo {
-    width: 800px;
+    width: 1000px;
     position: absolute;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -500px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -96,7 +99,7 @@ footer {
     margin-bottom: 1rem;
 }
 button {
-    margin-top: 80px;
+    margin-top: 60px;
     padding: 1rem 3rem;
     border-radius: 5px;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -116,10 +119,10 @@ button:hover {
 
 @media (max-width: 1300px) {
     .conteudo {
-        width: 780px;
+        width: 800px;
         position: absolute;
         left: 50%;
-        margin-left: -390px;
+        margin-left: -400px;
     }
     h3 {
         padding-top: 25px;
@@ -163,11 +166,13 @@ button:hover {
         padding-bottom: 30px;
         font-size: 25px;
         line-height: 25px;
+        font-weight: 500;
     }
     .back {
         height: 380px;
     }
     button {
+        margin-top: 40px;
         padding: 10px 25px;
         font-size: 25px;
     }
