@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&family=Lato&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&family=Lato&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -13,14 +13,10 @@ body {
 }
 h3 {
     font-family: 'Lato', sans-serif;
-    padding-top: 25px;
     padding-bottom: 20px;
     font-size: 22px;
     font-weight: 400;
     color: white;
-    text-align: center;
-}
-#texto2 {
     text-align: center;
 }
 h1 {
@@ -28,12 +24,12 @@ h1 {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1px;
-    padding-bottom: 32px;;
     line-height: 30px;
     font-weight: 500;
     color: white;
+    padding-bottom: 32px;
 }
-span {
+strong {
     font-weight: 700;
 }
 .back {
@@ -53,6 +49,7 @@ span {
     display: none;
 }
 .conteudo {
+    margin-top: 25px;
     width: 1000px;
     position: absolute;
     left: 50%;
@@ -62,6 +59,75 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    width: 900px;
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+#preco {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+#texto2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#botao-aparecer {
+    border: dashed 4px #00bb57;
+    border-radius: 20px;
+    padding: 20px 50px 30px 50px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    animation: ease-in;
+    animation-duration: 3s;
+}
+#botao-aparecer h4 {
+    font-size: 28px;
+    letter-spacing: normal;
+    font-weight: 600;
+}
+h5 {
+    font-size: 20px;
+    letter-spacing: normal;
+    font-weight: 600;
+}
+#botao-aparecer span {
+    text-decoration: line-through;
+}
+button {
+    margin-top: 10px;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    border: none;
+    background-color: #00bb57;
+    font-size: 30px;
+    box-shadow: 0px 10px 10px rgb(180, 180, 180);
+}
+button:hover {
+    cursor: pointer;
+    background-color: #007436;
+    transition: 0.3s;
+    transform: translate(0, -5px);
 }
 #vid_642719a449342600085e87ea {
     position:relative;
@@ -85,37 +151,6 @@ span {
     -webkit-backdrop-filter:blur(5px);
     backdrop-filter:blur(5px);
 }
-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: gray;
-    font-weight: 400;
-    width: 900px;
-    position: relative;
-    margin-top: 8rem;
-    margin-bottom: 1rem;
-}
-button {
-    margin-top: 60px;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    border: none;
-    background-color: #c8ab51;
-    font-size: 30px;
-    box-shadow: 0px 10px 15px rgb(137, 137, 137);
-}
-button:hover {
-    cursor: pointer;
-    background-color: #a78b10;
-    transition: 0.3s;
-    transform: translate(0, -5px);
-}
 
 @media (max-width: 1300px) {
     .conteudo {
@@ -125,7 +160,6 @@ button:hover {
         margin-left: -400px;
     }
     h3 {
-        padding-top: 25px;
         font-size: 18px;
     }
     h1 {
@@ -151,30 +185,30 @@ button:hover {
 
 @media (max-width: 800px) {
     .conteudo {
-        width: 96vw;
+        margin-top: 35px;
+        width: 94vw;
         position: absolute;
         left: 50%;
-        margin-left: -48vw;
+        margin-left: -47vw;
     }
     h3 {
-        padding-top: 25px;
+        margin-top: -10px;
         padding-bottom: 16px;
         font-size: 18px;
     }
     h1 {
-        width: 90vw;
-        padding-bottom: 30px;
+        width: 92vw;
         font-size: 25px;
         line-height: 25px;
         font-weight: 500;
     }
     .back {
-        height: 380px;
+        height: 360px;
     }
     button {
-        margin-top: 40px;
-        padding: 10px 25px;
-        font-size: 25px;
+        margin-top: 10px;
+        padding: 5px 8px;
+        font-size: 24px;
     }
     footer {
         font-size: 10px;
@@ -183,17 +217,37 @@ button:hover {
         padding-bottom: 1rem;
         position: relative;
     }
+    #botao-aparecer h4 {
+        font-size: 24px;
+        letter-spacing: normal;
+        font-weight: 600;
+    }
+    #preco {
+        font-size: 24px;
+        padding-top: 16px;
+    }
+    #botao-aparecer h5 {
+        font-size: 18px;
+    }
+    #texto2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #botao-aparecer {
+        width: 90vw;
+        padding: 16px 20px 20px 20px;
+    }
 }
 @media (max-width: 400px) {
     h3 {
-        padding-top: 30px;
+        padding-top: -10px;
         padding-bottom: 16px;
         font-size: 4vw;
     }
     h1 {
         font-size: 6vw;
         line-height: 6vw;
-        padding-bottom: 20PX;
+        padding-bottom: 20px;
     }
     button {
         padding: 10px 20px;
